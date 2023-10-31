@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Anti-Phishing Extension</title>
-    <script src="popup.js"></script>
-  </head>
-  <body>
-    <h1>Anti-Phishing Extension</h1>
-    <p>Status: <span id="status">Checking...</span></p>
-  </body>
+
+<head>
+  <title>Anti-Phishing Extension</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js"></script>
+</head>
+
+<body>
+  <div class="popup">
+    <div class="popup-header">
+      <h2>Anti-Phish</h2>
+      <button id="close-button">x</button>
+    </div>
+
+    <div class="loader"></div>
+
+    <!-- <h1 class="heading">Anti-Phishing Extension</h1>
+    <p>Status: <span id="status">Checking...</span></p> -->
+    <p id="status">Score is being generated</p>
+  </div>
+</body>
+
 </html>
