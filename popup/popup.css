@@ -5,7 +5,7 @@ body {
 }
 
 .popup-header {
-	background-color: #d3d3d4; /* Grey background color */
+	background-color: #0C356A; /* Grey background color */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -16,18 +16,19 @@ h2 {
 	margin: 0;
 	color: #fff; /* Text color for the title */
 }
-
+/*
 #close-button {
 	background-color: transparent;
 	border: none;
-	color: #fff; /* Text color for the button */
+	color: #fff;  Text color for the button 
 	font-size: 18px;
 	cursor: pointer;
 }
-
+*/
 .popup {
-	width: 200px; /* Set the desired width */
-	height: 200px; /* Set the desired height */
+	width: 175px; /* Set the desired width */
+	height: 115px; /* Set the desired height */
+	background-color: #FFF0CE;
 }
 
 .phishing-img {
@@ -35,9 +36,10 @@ h2 {
 	height: 40px;
 }
 
+/*
 .loader {
-	border: 16px solid #f3f3f3; /* Light grey */
-	border-top: 16px solid #3498db; /* Blue */
+	border: 16px solid #f3f3f3;
+	border-top: 16px solid #3498db; 
 	border-radius: 50%;
 	width: 30px;
 	height: 30px;
@@ -51,4 +53,42 @@ h2 {
 	100% {
 		transform: rotate(360deg);
 	}
+}
+*/
+
+.load{
+	display: flex;
+	justify-content: center;
+}
+
+.loader {
+    width: 32px;
+    height: 32px;
+    border: 8px solid #0174BE;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    /* display: flex; */
+	margin-top: 5%;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+.status{
+	text-align: center;
+	margin-top: 5%;
+	font-size: medium;
+	font-weight:700;
+}
+
+#anti{
+	font-weight: bolder;
 }

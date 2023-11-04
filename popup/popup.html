@@ -4,22 +4,30 @@
 <head>
   <title>Anti-Phishing Extension</title>
   <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="popup.js"></script>
 </head>
 
 <body>
   <div class="popup">
+
     <div class="popup-header">
-      <h2>Anti-Phish</h2>
-      <button id="close-button">x</button>
+      <button><i class="fa-solid fa-gear"></i></button>
+      <h2 id="anti">Anti-Phish</h2>
+      <button><i class="fa-solid fa-square-xmark"></i></button>
     </div>
 
-    <div class="loader"></div>
+    <!-- <div class="loader"></div> -->
+    <div class="load">
+      <div class="loader"></div>
+    </div>
 
-    <!-- <h1 class="heading">Anti-Phishing Extension</h1>
-    <p>Status: <span id="status">Checking...</span></p> -->
-    <p id="status">Score is being generated</p>
+    <div class="status">
+      checking...
+    </div>
+
   </div>
+
 </body>
 
 </html>
